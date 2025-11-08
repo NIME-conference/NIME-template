@@ -1718,7 +1718,7 @@
 \def\acmISBN#1{\def\@acmISBN{#1}}
 \acmISBN{978-x-xxxx-xxxx-x/YY/MM}
 \def\acmDOI#1{\def\@acmDOI{#1}}
-\acmDOI{10.1145/nnnnnnn.nnnnnnn}
+\acmDOI{nn.nnnn/nnnnnnn.nnnnnnn}
 \newlength\@ACM@badge@width
 \setlength\@ACM@badge@width{3pc}
 \newlength\@ACM@title@width
