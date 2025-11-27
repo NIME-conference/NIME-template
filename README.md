@@ -1,9 +1,10 @@
 # nime-template: A NIME-flavoured Publication Template
 
-This repository includes publication templates for the International Conference on New Interfaces for Musical Expression (NIME). Specifically we have templates for paper, music and workshop tracks:
+This repository includes publication templates for the International Conference on New Interfaces for Musical Expression (NIME). Specifically we have templates for paper, music and workshop tracks as well as alt.nime:
 
 - `nime-paper-template.tex` (2-column, paper track)
 - `nime-music-workshop-template.tex` (1-column, music and workshop tracks)
+- `nime-alt-template.tex` (1-column, alt.nime track)
 
 The templates have example text demonstrating many interesting and useful features, but you should check the call for specific editions of the NIME conference to make sure you are structuring your submission correctly.
 
