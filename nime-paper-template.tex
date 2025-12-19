@@ -64,6 +64,10 @@
 %%
 \documentclass[sigconf,anonymous,review]{nimeart}
 %%
+
+%% This package avoids urls margin overflow
+\usepackage{xurl}
+
 %% \BibTeX command to typeset BibTeX logo in the docs
 \AtBeginDocument{%
   \providecommand\BibTeX{{%
@@ -127,10 +131,10 @@
 
 \author{Aparna Patel}
 \affiliation{%
- \institution{Rajiv Gandhi University}
- \city{Doimukh}
- \state{Arunachal Pradesh}
- \country{India}}
+  \institution{Rajiv Gandhi University}
+  \city{Doimukh}
+  \state{Arunachal Pradesh}
+  \country{India}}
 
 \author{Huifen Chan}
 \affiliation{%
@@ -354,7 +358,7 @@ If this is not possible, specific references may be anonymised like this:
 
 To anonymise author names, please specify \verb|anonymous,review| in square brackets when submitting your paper.
 \begin{verbatim}
-  \documentclass[sigchi,anonymous,review]{nimepaper}
+  \documentclass[sigconf,anonymous,review]{nimeart}
 \end{verbatim}
 
 You can hide text in the paper like this:
@@ -363,18 +367,24 @@ You can hide text in the paper like this:
 This work was performed at \anon{NSA}.
 This work was performed at \anon[No Such Agency]{NSA}.
 \end{verbatim}
+which will appear in your paper's review version as:\\
+"This work was performed at \anon{NSA}." and This work was performed at "\anon[No Such Agency]{NSA}."
 
-% TODO: this is a bug!
+
+If you want to anonymize any text by suppressing it, you can use:
 \begin{verbatim}
   \begin{anonsuppress}
-    This is the continuation of the previous work by the author
-    \cite{prev1, prev2}.
+    This will not appear in your paper
+    \cite{doe2023, wizard2022}.
   \end{anonsuppress}
 \end{verbatim}
-
+\begin{anonsuppress}
+    This will not appear in your paper
+    \cite{doe2023, wizard2022}.
+\end{anonsuppress}
 
 For more information on anonymisation, you can checkout:
-\url{https://nime2025.org/submissions/\#anonymisation}.
+\url{https://nime2026.org/submissions/\#anonymisation}.
 
 \section{User-Defined Keywords}
 
@@ -385,10 +395,11 @@ the research being presented.
 \section{Sectioning Commands}
 
 Your work should use standard \LaTeX\ sectioning commands:
-\verb|\section|, \verb|\subsection|, \verb|\subsubsection|,
-\verb|\paragraph|, and \verb|\subparagraph|. The sectioning levels up to
-\verb|\subsusection| should be numbered; do not remove the numbering
+\allowbreak\verb|\section|, \verb|\subsection|, \verb|\subsubsection|, 
+\verb|\paragraph|, and \allowbreak\verb|\subparagraph|. The sectioning levels up to
+\verb|\subsubsection| should be numbered; do not remove the numbering
 from the commands.
+
 
 Simulating a sectioning command by setting the first word or words of
 a paragraph in boldface or italicized text is {\bfseries not allowed.}
@@ -661,7 +672,7 @@ Authors should not prepare this section as a numbered or unnumbered {\verb|\sect
 
 \section{Appendices}
 
-If your work needs an appendix, add it before the
+If your work needs an appendix, add it before the\allowbreak
 ``\verb|\end{document}|'' command at the conclusion of your source
 document.
 
