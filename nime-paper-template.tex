@@ -63,10 +63,13 @@
 %% to \documentclass[sigconf]{nimeart}
 %%
 \documentclass[sigconf,anonymous,review]{nimeart}
+% \documentclass[sigconf]{nimeart}
 %%
 
 %% This package avoids urls margin overflow
 \usepackage{xurl}
+
+\usepackage{CJKutf8}
 
 %% \BibTeX command to typeset BibTeX logo in the docs
 \AtBeginDocument{%
@@ -93,7 +96,7 @@
 %%
 %% The "title" command has an optional parameter,
 %% allowing the author to define a "short title" to be used in page headers.
-\title{The NIME of the Title Is Hope}
+\title{Keep Calm and Let the Paper Find Its Title}
 
 %%
 %% The "author" command and its associated commands are used to define
@@ -101,77 +104,81 @@
 %% Of note is the shared affiliation of the first two authors, and the
 %% "authornote" and "authornotemark" commands
 %% used to denote shared contribution to the research.
-\author{Ben Trovato}
+\author{F{\=a}timah al-{\d S}{\=a}l{\=\i}{\d h}}
 \authornote{Both authors contributed equally to this research.}
-\email{trovato@corporation.com}
-\orcid{1234-5678-9012}
-\author{G.K.M. Tobin}
+\email{fatimah.salih@example.ps}
+\affiliation{%
+  \institution{Bethlehem University}
+  \city{Bethlehem}
+  \country{Palestine}
+}
+
+\author{Y{\=o}s\'ef Ben-D\'av{\'\i}d}
 \authornotemark[1]
-\email{webmaster@marysville-ohio.com}
+\email{yosef.bendavid@example.ac.il}
 \affiliation{%
-  \institution{Institute for Clarity in Documentation}
-  \city{Dublin}
-  \state{Ohio}
-  \country{USA}
+  \institution{Tel Aviv University}
+  \city{Tel Aviv}
+  \country{Israel}
 }
 
-\author{Lars Th{\o}rv{\"a}ld}
+\author{Maria Madalena do Nascimento}
+\email{m.nascimento@example.br}
 \affiliation{%
-  \institution{The Th{\o}rv{\"a}ld Group}
-  \city{Hekla}
-  \country{Iceland}}
-\email{larst@affiliation.org}
-
-\author{Valerie B\'eranger}
-\affiliation{%
-  \institution{Inria Paris-Rocquencourt}
-  \city{Rocquencourt}
-  \country{France}
+  \institution{Universidade Federal do Rec\^oncavo Baiano (UFRB)}
+  \city{Cachoeira}
+  \state{BA}
+  \country{Brazil}
 }
 
-\author{Aparna Patel}
+\author{Aisha Williams}
+\email{aisha.williams@example.ac.uk}
 \affiliation{%
-  \institution{Rajiv Gandhi University}
-  \city{Doimukh}
-  \state{Arunachal Pradesh}
-  \country{India}}
+  \institution{Loughborough University London}
+  \city{London}
+  \country{United Kingdom}
+}
 
-\author{Huifen Chan}
+\author{Abdoulaye Ou\'edraogo}
+\email{abdoulaye.ouedraogo@example.bf}
 \affiliation{%
-  \institution{Tsinghua University}
-  \city{Haidian Qu}
-  \state{Beijing Shi}
-  \country{China}}
+  \institution{Universit\'e Joseph Ki-Zerbo}
+  \city{Ouagadougou}
+  \country{Burkina Faso}
+}
 
-\author{Charles Palmer}
+\author{Mar\'{\i}a Epiey\'u}
+\email{m.epieyu@example.edu.co}
 \affiliation{%
-  \institution{Palmer Research Laboratories}
-  \city{San Antonio}
-  \state{Texas}
-  \country{USA}}
-\email{cpalmer@prl.com}
+  \institution{Universidad de La Guajira}
+  \city{Riohacha}
+  \state{La Guajira}
+  \country{Colombia}
+}
 
-\author{John Smith}
+\author{Gu{\dh}r\'{\i}{\dh}ur J\'onsd\'ottir}
+\email{gudridur.jonsdottir@example.is}
 \affiliation{%
-  \institution{The Th{\o}rv{\"a}ld Group}
-  \city{Hekla}
-  \country{Iceland}}
-\email{jsmith@affiliation.org}
-
-\author{Julius P. Kumquat}
+  \institution{University of Iceland}
+  \city{Reykjav\'ik}
+  \country{Iceland}
+}
+\author{Xi\u{a}om\u{e}i W\'ang (\begin{CJK}{UTF8}{gbsn}王晓梅\end{CJK})}
+\email{xiaomei.wang@example.edu.cn}
 \affiliation{%
-  \institution{The Kumquat Consortium}
-  \city{New York}
-  \country{USA}}
-\email{jpkumquat@consortium.net}
-
-%%
+  \institution{Yanbian University}
+  \city{Yanji}
+  \state{Jilin}
+  \country{China}
+}
+%% ATTENTION: CHANGE THE LINE BELOW
+\renewcommand{\shortauthors}{al-{\d S}{\=a}l{\=\i}{\d h}, Ben-D\'av{\'\i}d et al.}
 %% By default, the full list of authors will be used in the page
 %% headers. Often, this list is too long, and will overlap
 %% other information printed in the page headers. This command allows
 %% the author to define a more concise list
 %% of authors' names for this purpose.
-\renewcommand{\shortauthors}{Trovato et al.}
+
 
 %%
 %% The abstract is a short summary of the work to be presented in the
@@ -191,14 +198,14 @@
 %% the work being presented. Separate the keywords with commas.
 \keywords{Do, Not, Us, This, Code, Put, the, Correct, Terms, for,
   Your, Paper}
+  
 %% A "teaser" image appears between the author and affiliation
 %% information and the body of the document, and typically spans the
-%% page.
+%% page. Suggested dimensions: 1200x400px
 \begin{teaserfigure}
-  \includegraphics[width=\textwidth]{images/sampleteaser.pdf}
-  \caption{Two synthesisers on a table, 2019.}
-  \Description{Enjoying looking at two synthesisers.
-  A Korg Monotron and a Korg Volca FM.}
+  \includegraphics[width=\textwidth]{images/sampleteaser.png}
+  \caption{Entangled meshwork of colorful banana patch cables. Image by WikiProfPC (CC BY-SA 4.0)}
+  \Description{Tangled banana patch cables}
   \label{fig:teaser}
 \end{teaserfigure}
 
@@ -226,49 +233,42 @@ of publication, from review to final ``camera-ready'' copy, to the
 author's own version, with {\itshape very} few changes to the source.
 
 \section{Template Overview}
-As noted in the introduction, the ``\verb|nimeart|'' document class can
-be used to prepare many different kinds of documentation --- a
-double-anonymous initial submission of a full-length technical paper, a
-two-page SIGGRAPH Emerging Technologies abstract, a ``camera-ready''
-journal article, a SIGCHI Extended Abstract, and more --- all by
-selecting the appropriate {\itshape template style} and {\itshape
-  template parameters}.
 
-This document will explain the major features of the document
-class. For further information, the {\itshape \LaTeX\ User's Guide} is
-available from
-\url{https://www.acm.org/publications/proceedings-template}.
+The \texttt{nimeart} document class is used to prepare submissions to the
+International Conference on New Interfaces for Musical Expression (NIME),
+including double-anonymous initial submissions and final camera-ready
+papers, depending on the selected template options. The class is based on
+the ACM proceedings template and inherits many of its conventions for
+layout, structure, and formatting. Authors may find additional general
+guidance in the official ACM proceedings template documentation
+(\url{https://www.acm.org/publications/proceedings-template}), which
+describes formatting practices common to ACM-affiliated conferences.
+
+This document explains the main features of the \texttt{nimeart} document
+class and how to configure it correctly for NIME submissions.
 
 \subsection{Template Styles}
 
-The primary parameter given to the ``\verb|nimeart|'' document class is
-the {\itshape template style} which corresponds to the kind of publication
-or SIG publishing the work. This parameter is enclosed in square
-brackets and is a part of the {\verb|documentclass|} command:
+The primary option passed to the \texttt{nimeart} document class is the
+\emph{template style}, which controls the overall formatting of the
+document. The template style is specified as an option to the
+\verb|\documentclass| command, enclosed in square brackets:
+
 \begin{verbatim}
-  \documentclass[STYLE]{nimeart}
+\documentclass[STYLE]{nimeart}
 \end{verbatim}
 
-\subsection{Template Parameters}
+For NIME submissions, the selected template style determines aspects such
+as page layout, font sizes, and column structure, and should be chosen
+according to the instructions for the relevant submission stage (for
+example, review or camera-ready).
 
-In addition to specifying the {\itshape template style} to be used in
-formatting your work, there are a number of {\itshape template parameters}
-which modify some part of the applied template style. A complete list
-of these parameters can be found in the {\itshape \LaTeX\ User's Guide.}
+For submission and review, authors should use:
+\begin{verbatim}
+\documentclass[sigconf,anonymous,review]{nimeart}
+\end{verbatim}
 
-Frequently-used parameters, or combinations of parameters, include:
-\begin{itemize}
-\item {\texttt{anonymous,review}}: Suitable for a ``double-anonymous''
-  conference submission. Anonymizes the work and includes line
-  numbers. Use with the \texttt{\string\acmSubmissionID} command to print the
-  submission's unique ID on each page of the work.
-\item{\texttt{authorversion}}: Produces a version of the work suitable
-  for posting by the author.
-\item{\texttt{screen}}: Produces colored hyperlinks.
-\end{itemize}
-
-This document uses the following string as the first command in the
-source file:
+When preparing the final camera-ready version, authors should use:
 \begin{verbatim}
 \documentclass[sigconf]{nimeart}
 \end{verbatim}
@@ -312,15 +312,8 @@ Each author must be defined separately for accurate metadata
 identification.  As an exception, multiple authors may share one
 affiliation. Authors' names should not be abbreviated; use full first
 names wherever possible. Include authors' e-mail addresses whenever
-possible.
-
-Grouping authors' names or e-mail addresses, or providing an ``e-mail
-alias,'' as shown below, is not acceptable:
-\begin{verbatim}
-  \author{Brooke Aster, David Mehldau}
-  \email{dave,judy,steve@university.edu}
-  \email{firstname.lastname@phillips.org}
-\end{verbatim}
+possible. Grouping authors' names or e-mail addresses, or providing an ``e-mail
+alias,'' is \emph{not} acceptable.
 
 The \verb|authornote| and \verb|authornotemark| commands allow a note
 to apply to multiple authors --- for example, if the first two authors
@@ -543,7 +536,7 @@ third-party material, you must clearly identify it as such, as shown
 in the example below.
 \begin{figure}[h]
   \centering
-  \includegraphics[width=\linewidth]{images/sample-bela.jpg}
+  \includegraphics[width=\linewidth]{images/sample-image.jpg}
   \caption{A Bela board in action at a workshop (2017).}
   \Description{Somebody manipulating sensors on a Bela board.}
 \end{figure}
