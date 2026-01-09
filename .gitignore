@@ -300,7 +300,11 @@ TSWLatexianTemp*
 # xwatermark package
 *.xwm
 
+#.DS_Store Mac files
 .DS_Store
+
+#Temporary Microsoft Word files
+~$*.docx
 
 # REVTeX puts footnotes in the bibliography by default, unless the nofootinbib
 # option is specified. Footnotes are the stored in a file with suffix Notes.bib.
