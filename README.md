@@ -10,30 +10,30 @@ The templates have example text demonstrating many interesting and useful featur
 
 The `word` folder also contains .docx MS Word templates for all tracks. 
 
-In addition to the alt.nime template, you can also find the folder `alt-nime_pictorial-templates`, which contains Word .docx, PowerPoint .pptx, and InDesign templates for pictorial-oriented work should you wish to use this format for your alt.nime submission. These templates are modeled on the ACM SIGCHI Pictorial template used a the ACM TEI and DIS conferences and provide a visual focus for your research. 
+In addition to the alt.nime template, you can also find folder `alt-nime_pictorial-templates`, which contains Word .docx, PowerPoint .pptx, and InDesign templates for pictorial-oriented work, should you wish to use this format for your alt.nime submission. These templates are modeled on the ACM SIGCHI Pictorial template used at the ACM TEI and DIS conferences and provide a visual focus for your research. 
 
 ## `nimeart.cls`
 
-`nimeart.cls` is the LaTeX class for generating PDF documents from these templates. `nimeart` is a fork of the [ACM publication format](https://www.acm.org/publications/proceedings-template) `acmart` to provide specific features for the NIME conference:
+`nimeart.cls` is the LaTeX class used to generate PDF documents from these templates. `nimeart` is a fork of the [ACM publication format](https://www.acm.org/publications/proceedings-template) `acmart` that provides specific features for the NIME conference:
 
   - A4 paper size
   - 1-column conference format based on acmsmall
-  - sample outputs are focussed on NIME tracks
+  - Sample outputs are focused on NIME tracks
 
-You can use the same features as `acmart` as documented in it's [manual](https://portalparts.acm.org/hippo/latex_templates/acmart.pdf).
+You can use the same features as `acmart`, as documented in its [manual](https://portalparts.acm.org/hippo/latex_templates/acmart.pdf).
 
 This derived work is distributed in compliance with the LPPL.
 
 The original source code can be found at: <https://github.com/borisveytsman/acmart>
 
-This derived work is only useful for the NIME community. Any issues with `nimeart.cls` should be flagged in this repository: <https://github.com/nime-conference/nimeart> or reported in the [NIME forum](https://forum.nime.org).
+This derived work is only useful for the NIME community. Any issues with `nimeart.cls` should be flagged in this repository: <https://github.com/nime-conference/nimeart> or reported on the [NIME forum](https://forum.nime.org).
 
-The authors of the original acmart are in no way responsible for use of nimeart.
+The authors of the original acmart are in no way responsible for the use of nimeart.
 
 We thank the authors of acmart and the ACM community for their ongoing contributions to academic publishing within and outside of ACM-sponsored events and publications.
 
 ## History
 
-NIME traditionally used the old ACM sig-alternate (2-column) class forked in 2009. In 2019, NIME began to use a fork of acmart for 1-column music submissions. NIME used PubPub in 2021-2022, an alternative web-based publication platform. For 2025, the NIME template has been updated to adopt a fork of the latest ACM publication format.
+NIME traditionally used the old ACM sig-alternate (2-column) class forked in 2009. In 2019, NIME began using a fork of acmart for 1-column music submissions. NIME used PubPub in 2021—2022, an alternative web-based publication platform. For 2025, the NIME template has been updated to adopt a fork of the latest ACM publication format.
 
 Many thanks to Allie Teixeira Riggs for adapting the ACM SIGCHI Pictorial templates for use in the alt.nime track for 2026.
